@@ -1,0 +1,22 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Django secret settings
+.env
+.venv
+db.sqlite3
+
+# Ignore React/Django frontend dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+static/frontend/node_modules/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore system files
+.DS_Store
