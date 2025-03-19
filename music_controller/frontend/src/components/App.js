@@ -1,25 +1,30 @@
-import React, { Component } from "react";
-import { createRoot } from "react-dom/client"; // ✅ Use createRoot instead of render
-import HomePage from "./HomePage";
-import RoomJoinPage from "./RoomJoinPage";
-import CreateRoomPage from "./CreateRoomPage";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home';
+import Profile from '../pages/Profile';
+import NotFound from '../pages/NotFound';
+import LoginPage from '../pages/LoginPage';
+import Navbar from '../components/Navbar';
 
-export default class App extends Component {
-    constructor(props) {
-        super(props);
-    }
+// Debugging: Check what is actually being imported
+console.log("Home:", Home);
+console.log("Profile:", Profile);
+console.log("NotFound:", NotFound);
+console.log("LoginPage:", LoginPage);
+console.log("Navbar:", Navbar);
 
-    render() {
-        return ( 
-        <div>
-            <HomePage />
-            
-        </div>
-        );
-    }
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
 }
 
-// Mount the App component properly
-const appDiv = document.getElementById("app");
-const root = createRoot(appDiv);
-root.render(<App />);
+export default App;
