@@ -38,6 +38,6 @@ module.exports = (env, argv) => {
       hot: true,
       port: 8080,
     },
-    devtool: isDevelopment ? "nosources-source-map" : "hidden-source-map",  // ✅ Disables eval()
+    devtool: isDevelopment ? "nosources-source-map" : "hidden-source-map",  // remember to revert
   };
 };

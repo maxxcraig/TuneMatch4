@@ -13,7 +13,7 @@ const Profile = () => {
 
   useEffect(() => {
     if (token) {
-      localStorage.setItem("spotify_token", token); // Store token in local storage
+      localStorage.setItem("spotify_token", token);
       setLoading(false);
     } else {
       setError("No access token found. Please log in again.");

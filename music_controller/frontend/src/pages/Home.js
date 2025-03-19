@@ -4,4 +4,4 @@ const Home = () => {
   return <h1>Home FINALLY WORKS</h1>;
 };
 
-export default Home; // ✅ Ensure `export default`
+export default Home;

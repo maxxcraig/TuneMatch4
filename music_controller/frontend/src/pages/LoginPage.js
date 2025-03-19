@@ -16,7 +16,7 @@ const LoginPage = () => {
         <Title order={2} align="center">Welcome to TuneMatch</Title>
       </Center>
       <Text align="center" color="dimmed" mt="md">
-        Log in with Spotify to see your stats and match with similar listeners.
+        Log in with Spotify to see your stats join jam sessions.
       </Text>
       <Center mt="xl">
         {loading ? (

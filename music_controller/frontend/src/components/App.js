@@ -6,7 +6,7 @@ import NotFound from '../pages/NotFound';
 import LoginPage from '../pages/LoginPage';
 import Navbar from '../components/Navbar';
 
-// Debugging: Check what is actually being imported
+// debugging ok
 console.log("Home:", Home);
 console.log("Profile:", Profile);
 console.log("NotFound:", NotFound);
